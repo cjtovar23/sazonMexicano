@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Taqueria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png"><b>SAZON MEXICANO</b></a>
+      <div class="menuToggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="confirmacion.html" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Always choose the best </h2>
+        <p>
+          At <b>SAZON MEXICANO</b> , we are dedicated to bringing the authentic taco 
+          experience to your palate. Our commitment is to offer you the most 
+          delicious flavors of Mexican cuisine, prepared with fresh ingredients 
+          of the highest quality.
+        </p>
+        <a href="#menu" class="btn">Our service</a>
+        <input class="urlBox"  type="text" id="urlBox" readonly>
+      </div>
+    </section>
+
+    <section class="ajax" id="ajax">
+      <input type="text" id="urlBox2" placeholder="Introduce la URL">
+      <button onclick="mostrarContenido()">Mostrar Contenidos</button>
+      <div id="zonaContenidos"></div>
+    </section>
+
+    <section class="ajax" id="ajax">
+      <button onclick="realizarSolicitud()">Realizar Solicitud</button>
+      <div id="zonaEstados">Estado: Sin solicitud</div>
+    </section>
+
+    <section class="ajax" id="ajax">
+      <div id="zonaCabeceras">Cabecera HTTP de la respuesta del servidor:</div>
+    </section>
+
+    <section class="ajax" id="ajax">
+      <div id="zonaCodigoEstado">Código de estado y texto de la respuesta:</div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titeText"><span>A</span>bout Us</h2>
+          <p>
+            At <b>SAZON MEXICANO</b>, we are passionate about tacos. 
+            Each taco we prepare is a masterpiece of Mexican flavor and tradition. 
+            We pride ourselves on providing our customers with a unique culinary 
+            experience that will transport them directly to the streets of Mexico.
+            <br /><br />
+            Our mission is to share the richness of Mexican cuisine through 
+            our tacos and make each meal an unforgettable experience. Whether 
+            you visit us at our restaurant or request us for your next event, 
+            we promise authentic flavor and exceptional service.
+            <br /><br />
+            Thank you for choosing <b>SAZON MEXICANO</b> to satisfy your 
+            taco cravings! We hope to see you soon and serve you the most 
+            delicious tacos you have ever tasted.
+          </p>
+        </div>
+        <div class="col50">
+          <div class="imgBx">
+            <img
+              src="img/logo-grande.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <div class="title">
+        <h1 class="titleText">Our <span>S</span>ervices</h1>
+        <p>
+          Discover authentic flavors in our Starters, Dishes, 
+          Desserts and Drinks categories. Explore the delights 
+          we have prepared for you. Enjoy!
+        </p>
+      </div>
+      <br /><br />
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="img/postre.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h3>Postres</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="img/bebidas.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h3>Bebidas</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="img/plato.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h3>Platos</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="img/entrada.webp"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h3>Entradas</h3>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="title">
+        <a href="menu.html" class="btn">View All</a>
+      </div>
+    </section>
+    <div class="copyrightText">
+      <footer>
+        <div class="footer-content">
+          <p>&copy; Copyright 2023 <b>Cristan Javier Tovar</b> All Right Reserved</p>
+          <ul class="social-links">
+            <li><a href="#" target="_blank"><i class="bi bi-facebook"></i> Sazon Mexicano</a></li>
+            <li><a href="#" target="_blank"><i class="bi bi-twitter-x"></i> Sazon_Mexicano</a></li>
+            <li><a href="#" target="_blank"><i class="bi bi-instagram"></i> @sazon_Mexicano</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

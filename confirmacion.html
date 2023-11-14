@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Taqueria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png"><b>SAZON MEXICANO</b></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="confirmacion.html" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </header>
+    <br /><br /><br /><br />
+    <section class="contact" id="contact" style="background: url('img/fondo-contacto.png');
+    background-size: cover;">
+      <div class="title">
+        <h2 class="titleText">Contact <span>U</span>s</h2>
+        <p>
+          If you wish to contact us, do not hesitate to do so. We are available 
+          to help you and give you the best experience possible.
+        </p>
+      </div>
+      <div class="contactForm">
+        <h3>Send Message</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="last name" />
+          </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="inputBox">
+            <input type="date" placeholder="date" />
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="Number of people" />
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="Questions, comments and reservations."></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" placeholder="Send" />
+        </div>
+      </div>
+    </section>
+    <div class="copyrightText">
+        <footer>
+          <div class="footer-content">
+            <p>&copy; Copyright 2023 <b>Cristan Javier Tovar</b> All Right Reserved</p>
+            <ul class="social-links">
+              <li><a href="#" target="_blank"><i class="bi bi-facebook"></i> Sazon Mexicano</a></li>
+              <li><a href="#" target="_blank"><i class="bi bi-twitter-x"></i> Sazon_Mexicano</a></li>
+              <li><a href="#" target="_blank"><i class="bi bi-instagram"></i> @sazon_Mexicano</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
